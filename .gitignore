@@ -1,0 +1,26 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 训练产物（体积大，不入库；由 3.train_cnn.py / 6.distillation_cnn.py 生成）
+models/*.pth
+models/*.pt
+
+# 数据划分产物（由 2.split_data.py 从 ore_images/ 生成）
+ore_images_split/
+ore_images_filtered/
+
+# 人工复核/实验临时文件
+_review/
+_review_train/
+models/exp/
+_diag_*.png
+_diag.py
+_tta_eval.py
+_filter_eval.py
+_outliers.py
+_make_sheets.py
+_regen_train_sheets.py
+_train_exp.py

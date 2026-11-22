@@ -1,0 +1,1 @@
+@echo off & chcp 65001 >nul & cd /d "%~dp0backend" & if not exist ".env" copy ".env.example" ".env" >nul & set DATABASE_URL=sqlite:///./ore_recognition.db & pip install -r requirements.txt & echo. & echo Backend SQLite: http://127.0.0.1:8000 & echo Docs: http://127.0.0.1:8000/docs & python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 & pause

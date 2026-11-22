@@ -1,0 +1,10 @@
+# 矿石图像分类项目依赖
+# 推荐直接双击运行 0.setup_env.bat（会自动选择 CPU / CUDA 版 PyTorch）
+torch>=2.2
+torchvision>=0.17
+opencv-python
+pillow
+numpy
+matplotlib
+requests
+tqdm
